@@ -1,2 +1,2 @@
-# Tailrace
-A monitor for Hydro electric damns - and all things power (later)
+# Orion.log
+Game API collection Starting with Vrchat and moving to games like osu!, Elite Dangereous and Steam!
