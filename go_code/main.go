@@ -10,8 +10,8 @@ func main() {
 
 	type hydro struct {
 		FuelType string `json:"fuelType"`
-		BmUnit   string `json:"bmUnit"`
-		Name     string `json:"name"`
+		BmUnit   string `json:"nationalGridBmUnit"`
+		Name     string `json:"bmUnitName"`
 	}
 
 	var units []hydro
@@ -19,6 +19,7 @@ func main() {
 	_, err := client.R().
 		SetResult(&units).
 		Get("https://data.elexon.co.uk/bmrs/api/v1/reference/bmunits/all")
+
 	if err != nil {
 		panic(err)
 	}
