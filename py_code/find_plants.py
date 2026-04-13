@@ -10,7 +10,7 @@ with urllib.request.urlopen(url) as r:
 hydro_types = ["NPSHYD", "PS"]
 hydro = [u for u in data if u.get("fuelType") in hydro_types]
 
-print("NGBmUnitName                 Type        bmUnitName")
+print(f"{'NGBmUnitName':25s}  {'Type':8s}  bmUnitName")
 
 for u in hydro:
     print(
